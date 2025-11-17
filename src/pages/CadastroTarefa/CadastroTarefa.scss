@@ -1,0 +1,110 @@
+.cadastro-tarefa {
+  padding: 2rem 0;
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .titulo-pagina {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #1f2937;
+  }
+
+  .formulario {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .campos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .campo-grupo {
+    margin-bottom: 1.5rem;
+  }
+
+  .campo-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+
+  .campo-input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+
+    &.erro {
+      border-color: #ef4444;
+      background-color: rgba(239, 68, 68, 0.05);
+    }
+
+    &:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+  }
+
+  textarea.campo-input {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .mensagem-erro {
+    display: block;
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+
+  .dias-restantes {
+    display: block;
+    color: #64748b;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    font-style: italic;
+  }
+
+  .botao-primario {
+    width: 100%;
+    background: #3b82f6;
+    color: white;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    &:hover:not(:disabled) {
+      background: #2563eb;
+    }
+  }
+}
+
+// Responsividade
+@media (max-width: 768px) {
+  .cadastro-tarefa {
+    .container {
+      padding: 0 1rem;
+    }
+    
+    .formulario {
+      padding: 1.5rem;
+    }
+    
+    .campos-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+}

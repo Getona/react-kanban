@@ -1,0 +1,63 @@
+.navegacao {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+  }
+
+  &-lista {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-link {
+    display: block;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    color: #64748b;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+      color: #3b82f6;
+      background-color: #f9fafb;
+    }
+
+    &.ativo {
+      color: #3b82f6;
+      border-bottom-color: #3b82f6;
+      background-color: rgba(59, 130, 246, 0.05);
+    }
+  }
+}
+
+// Responsividade
+@media (max-width: 768px) {
+  .navegacao {
+    &-container {
+      padding: 0 1rem;
+    }
+    
+    &-lista {
+      justify-content: space-around;
+      width: 100%;
+    }
+    
+    &-link {
+      padding: 1rem;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  }
+}

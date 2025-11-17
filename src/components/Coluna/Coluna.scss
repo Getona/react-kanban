@@ -1,0 +1,72 @@
+.coluna {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid var(--cor-coluna, #3b82f6);
+  min-height: 600px;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &.sobre {
+    background: rgba(59, 130, 246, 0.05);
+    transform: scale(1.02);
+  }
+
+  &-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f3f4f6;
+  }
+
+  &-titulo {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+  }
+
+  &-contador {
+    background: var(--cor-coluna, #3b82f6);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  &-tarefas {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+    min-height: 500px;
+  }
+
+  &-vazia {
+    text-align: center;
+    padding: 2rem;
+    color: #64748b;
+    font-style: italic;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// Responsividade
+@media (max-width: 768px) {
+  .coluna {
+    min-height: 400px;
+    
+    &-tarefas {
+      min-height: 300px;
+    }
+  }
+}
