@@ -31,3 +31,13 @@ npm install
 
 # Executar em desenvolvimento
 npm run dev
+
+🎯 Como usar
+Cadastre usuários na página "Usuários"
+
+Crie tarefas na página "Tarefa"
+
+Gerencie no "Quadro Kanban" arrastando entre colunas
+
+👨‍💻 Autor
+Geovanna Souza - https://github.com/Getona
