@@ -1,16 +1,33 @@
-# React + Vite
+# 📋 React Kanban Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistema de gerenciamento de tarefas Kanban desenvolvido com React, Vite e TypeScript.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Cadastro de usuários com validação Zod
+- ✅ Cadastro de tarefas com drag & drop
+- ✅ Quadro Kanban com 3 colunas (A Fazer, Fazendo, Pronto)
+- ✅ Validação de formulários com React Hook Form
+- ✅ Design responsivo e acessível
+- ✅ Drag & Drop com @dnd-kit
 
-## React Compiler
+## 🛠 Tecnologias
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React, Vite, TypeScript
+- **Estilização:** Sass/SCSS
+- **Validação:** Zod + React Hook Form
+- **Drag & Drop:** @dnd-kit/core
+- **Roteamento:** React Router DOM
+- **HTTP Client:** Axios
 
-## Expanding the ESLint configuration
+## 📦 Instalação
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Clonar repositório
+git clone https://github.com/SEU-USUARIO/react-kanban.git
+
+# Instalar dependências
+npm install
+
+# Executar em desenvolvimento
+npm run dev
